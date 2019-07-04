@@ -1,13 +1,13 @@
 <?php
 
-use \Mockery;
 use DateFormatter\DateFormatter;
+use PHPUnit\Framework\TestCase;
 
 class DateFormatterTest extends TestCase
 {
 
     /**
-     * @covers \src\DateFormatter::newDateTime
+     * @covers DateFormatter\DateFormatter::newDateTime
      */
     public function testNewDateTime()
     {
@@ -19,7 +19,7 @@ class DateFormatterTest extends TestCase
     }
 
     /**
-     * @covers \src\DateFormatter::dateDbToHuman
+     * @covers DateFormatter\DateFormatter::dateDbToHuman
      */
     public function testDateDbToHumanNull()
     {
@@ -31,7 +31,7 @@ class DateFormatterTest extends TestCase
     }
 
     /**
-     * @covers \src\DateFormatter::dateDbToHuman
+     * @covers DateFormatter\DateFormatter::dateDbToHuman
      */
     public function testDateDbToHuman()
     {
@@ -43,7 +43,7 @@ class DateFormatterTest extends TestCase
     }
 
     /**
-     * @covers \src\DateFormatter::dateDbToHuman
+     * @covers DateFormatter\DateFormatter::dateDbToHuman
      */
     public function testDateDbToHumanFormat()
     {
@@ -55,7 +55,7 @@ class DateFormatterTest extends TestCase
     }
 
     /**
-     * @covers \src\DateFormatter::dateHumanToDb
+     * @covers DateFormatter\DateFormatter::dateHumanToDb
      */
     public function testdateHumanToDbNull()
     {
@@ -67,7 +67,7 @@ class DateFormatterTest extends TestCase
     }
 
     /**
-     * @covers \src\DateFormatter::dateHumanToDb
+     * @covers DateFormatter\DateFormatter::dateHumanToDb
      */
     public function testdateHumanToDb()
     {
@@ -79,7 +79,7 @@ class DateFormatterTest extends TestCase
     }
 
     /**
-     * @covers \src\DateFormatter::datetimeDbToHuman
+     * @covers DateFormatter\DateFormatter::datetimeDbToHuman
      */
     public function testDatetimeDbToHumanNull()
     {
@@ -91,7 +91,7 @@ class DateFormatterTest extends TestCase
     }
 
     /**
-     * @covers \src\DateFormatter::datetimeDbToHuman
+     * @covers DateFormatter\DateFormatter::datetimeDbToHuman
      */
     public function testDatetimeDbToHuman()
     {
@@ -103,7 +103,7 @@ class DateFormatterTest extends TestCase
     }
 
     /**
-     * @covers \src\DateFormatter::datetimeDbToHuman
+     * @covers DateFormatter\DateFormatter::datetimeDbToHuman
      */
     public function testDatetimeDbToHumanFormat()
     {
@@ -115,7 +115,7 @@ class DateFormatterTest extends TestCase
     }
 
     /**
-     * @covers \src\DateFormatter::datetimeHumanToDb
+     * @covers DateFormatter\DateFormatter::datetimeHumanToDb
      */
     public function testDatetimeHumanToDbNull()
     {
@@ -127,7 +127,7 @@ class DateFormatterTest extends TestCase
     }
 
     /**
-     * @covers \src\DateFormatter::datetimeHumanToDb
+     * @covers DateFormatter\DateFormatter::datetimeHumanToDb
      */
     public function testDatetimeHumanToDb()
     {

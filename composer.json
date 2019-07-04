@@ -3,6 +3,7 @@
     "description": "PHP library to format date",
     "version": "1.0.0",
     "type": "library",
+    "license": "GPL-3.0-only",
     "authors": [
         {
             "name": "Geovanni Savian",
