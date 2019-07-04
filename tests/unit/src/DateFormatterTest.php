@@ -7,16 +7,15 @@ class DateFormatterTest extends TestCase
 {
 
     /**
-     * @covers \src\DateFormatter::dateTime
+     * @covers \src\DateFormatter::newDateTime
      */
-    public function testDateTime()
+    public function testNewDateTime()
     {
         $classFormatter = new DateFormatter();
         $myDate = date('Y-m-d');
-        $date = $classFormatter->dateTime($myDate);
+        $date = $classFormatter->newDateTime($myDate);
         $this->assertInstanceOf(DateFormatter::class, $classFormatter);
         $this->assertInstanceOf(DateTime::class, $date);
-        $this->assertEquals($myDate, $date);
     }
 
     /**

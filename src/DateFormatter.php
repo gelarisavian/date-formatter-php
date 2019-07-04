@@ -10,7 +10,7 @@ class DateFormatter
      * @param string $date
      * @return instance of DateTime
      */
-    public function dateTime($date)
+    public function newDateTime($date)
     {
         return new \DateTime($date);
     }
@@ -27,9 +27,9 @@ class DateFormatter
             return null;
         }
         if(empty($format)) {
-            return str_replace('-', '/', date_format($this->dateTime($date), 'd-m-Y'));
+            return str_replace('-', '/', date_format($this->newDateTime($date), 'd-m-Y'));
         }
-        return date_format($this->dateTime($date), $format);
+        return date_format($this->newDateTime($date), $format);
     }
 
     /**
@@ -42,7 +42,7 @@ class DateFormatter
         if($date == null) {
             return null;
         }
-        return date_format( $this->dateTime(str_replace('/', '-', $date)), 'Y-m-d');
+        return date_format( $this->newDateTime(str_replace('/', '-', $date)), 'Y-m-d');
     }
 
     /**
@@ -57,9 +57,9 @@ class DateFormatter
             return null;
         }
         if (empty($format)) {
-            return str_replace('-', '/', date_format($this->dateTime($date), 'd-m-Y H:i:s'));
+            return str_replace('-', '/', date_format($this->newDateTime($date), 'd-m-Y H:i:s'));
         }
-        return date_format($this->dateTime($date), $format);
+        return date_format($this->newDateTime($date), $format);
     }
 
     /**
@@ -72,6 +72,6 @@ class DateFormatter
         if ($date == null) {
             return null;
         }
-        return date_format($this->dateTime(str_replace('/','-', $date)), 'Y-m-d H:i:s');
+        return date_format($this->newDateTime(str_replace('/','-', $date)), 'Y-m-d H:i:s');
     }
 }
